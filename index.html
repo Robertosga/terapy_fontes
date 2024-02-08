@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clínica de Psicologia</title>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo_therapy.png" alt="Logo da Clínica">
+        </div>
+        
+    </header>
+
+    <nav>
+        <div class="menu-icon">&#9776;</div>
+        <div class="menu-links">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#profissionais">Profissionais</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <section class="home-section">
+        <img src="img/fundo.png" alt="Imagem da Página Inicial">
+        <div class="home-content">
+           </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <div class="image-with-text">
+            <img src="img/sobre2.png" alt="Imagem representativa da clínica">
+            <div>
+                <p>Nossa clínica é mais do que um espaço de terapia, é um refúgio para quem busca equilíbrio emocional e bem-estar.</p>
+                <p>Com uma equipe dedicada de psicólogos, oferecemos suporte profissional para superar desafios e alcançar uma vida mais plena.</p>
+                <p>Na Clínica de Psicologia, acreditamos que cada indivíduo é único e, portanto, adaptamos nossos métodos terapêuticos para atender às necessidades específicas de cada cliente. Nossa abordagem é baseada em empatia, respeito e compreensão, criando um ambiente acolhedor para a jornada rumo ao crescimento pessoal.</p>
+                <p>Além de sessões individuais, oferecemos workshops e atividades que promovem o autocuidado e o desenvolvimento emocional. Estamos comprometidos em auxiliar nossos clientes a alcançarem uma vida mais equilibrada e significativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma variedade de serviços psicológicos, incluindo terapia individual, terapia de casal e grupos de apoio. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+
+    <section id="profissionais">
+        <h2>Nossos Profissionais</h2>
+
+        <div class="gallery" id="gallery">
+            <div class="row">
+                <div class="thumbnail" onclick="expandDetails('Profissional 1', 'CRP: XXXX', 'Terapia Cognitivo-Comportamental, Psicanálise', 'link_whatsapp1', 'img/bel.jpg')">
+                    <img src="img/bel.jpg" alt="Foto do Profissional 1">
+                </div>
+                <div class="thumbnail" onclick="expandDetails('Profissional 1', 'CRP: XXXX', 'Terapia Cognitivo-Comportamental, Psicanálise', 'link_whatsapp1', 'img/bel.jpg')">
+                    <img src="img/bel.jpg" alt="Foto do Profissional 1">
+            </div>
+            <div class="thumbnail" onclick="expandDetails('Profissional 1', 'CRP: XXXX', 'Terapia Cognitivo-Comportamental, Psicanálise', 'link_whatsapp1', 'img/bel.jpg')">
+                <img src="img/bel.jpg" alt="Foto do Profissional 1">
+        </div>
+
+        <div class="details-container" id="details-container" onclick="closeDetails()">
+            <!-- Detalhes serão exibidos aqui -->
+        </div>
+
+    </section>
+    
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ajudar. Entre em contato conosco para marcar uma consulta ou esclarecer suas dúvidas.</p>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <!-- Mapa para Localização -->
+        <div>
+            <h3>Nossa Localização</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.345903935006!2d-48.98196838501364!3d-16.275348643232155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e60d7c64e3b3f%3A0x40755855c4cc6bd7!2sSua%20Cl%C3%ADnica%20Psicol%C3%B3gica!5e0!3m2!1spt-BR!2sbr!4v1643989842254!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Therapy Fontes. Todos os direitos reservados.</p>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
